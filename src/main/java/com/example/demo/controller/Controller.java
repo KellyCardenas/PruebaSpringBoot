@@ -1,5 +1,6 @@
 package com.example.demo.controller;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -43,7 +44,13 @@ public class Controller {
 			trabajadorDao.save(trabajador);
 		
 		}
-	
+		
+		@GetMapping("/consultar")
+		public List<Trabajador> consultar() {
+			
+			return (List<Trabajador>) trabajadorDao.findAll();
+		}
+		
 		
 		//me permite consultar por id
 		@GetMapping("/consultar/{id}")
