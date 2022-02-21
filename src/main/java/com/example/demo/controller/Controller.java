@@ -61,7 +61,7 @@ public class Controller {
 		}
 	
 		@GetMapping("/consultarEmail/{email}")
-		public Trabajador cosultarPlaca(@PathVariable("email") String email){
+		public Trabajador cosultarEmail(@PathVariable("email") String email){
 			
 			return trabajadorDao.findByEmail(email);
 		}
