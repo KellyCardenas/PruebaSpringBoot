@@ -43,13 +43,7 @@ public class Controller {
 			trabajadorDao.save(trabajador);
 		
 		}
-//		
-//		@GetMapping("/consultar")
-//		public List<Vehiculo> consultar() {
-//			
-//			return vehiculoDao.findAll();
-//		}
-//		
+	
 		
 		//me permite consultar por id
 		@GetMapping("/consultar/{id}")
